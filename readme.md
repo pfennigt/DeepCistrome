@@ -25,6 +25,7 @@ generate motifs for each family using SHAP and MoDisco.
 
 ### Predictions-Mercartor4 enrichment analysis
 To perform the mercator-predictions enrichment analysis, we need the following steps.
+
 9. Using "Arabidopsis_thaliana.TAIR10.pep.all.fa" found within the data/proteome subdirectory, compute Mercator4 
 functional annotations using Mercator4 ( https://www.plabipd.de/mercator_main.html ). Download the output and save it
 in the data directory as *mercator4_output.txt*.
@@ -35,6 +36,7 @@ Mercator functional groups ``python mercator4_cross_promoter_clusters_enrichment
 
 ### Effects of SNPs on binding profiles
 We used SNPs from the AraGWAs catalog to perform this analysis. We have also uploaded the SNPs downloaded and used.
+
 12. Run the "SNP_effects_on_predictions.py" script:  ``python SNP_effects_on_predictions.py``.
 
 ### Transfer learning and heat stress classification analysis in *Zea mays*
@@ -42,5 +44,6 @@ We used heat stress MOA-seq data from Liang et al., 2022. This analysis compares
 change to those which showed negative fold changes. Precisely, it looks at regions on the genome were recorded MOA-seq
 footprints increase or decrease and compares these two using the predicted binding profiles generated using our CNN
 models trained on *Arabidopsis thaliana*.
+
 13. Run the "stress_binding_classification.py" script: ``python stress_binding_classification.py``.
 
