@@ -5,7 +5,7 @@ import pandas as pd
 if not os.path.exists('data/peaks'):
     os.mkdir('data/peaks')
 
-main_dir = 'data/dap_download_may2016_peaks/dap_data_v4/peaks/'
+main_dir = 'data/zea_mays/Galli2025/B73_peaks/'
 summary_stats = []
 for family in os.listdir(main_dir):
     files = glob.glob(f'{main_dir}/{family}' + '/**/*.narrowPeak', recursive=True)

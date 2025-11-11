@@ -2,7 +2,7 @@ from utils import peak_overlap_genome_bins
 import pandas as pd
 pd.options.display.width = 0
 
-genome_path = 'data/genome/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa'
+genome_path = 'data/genome/Zea_mays.B73_RefGen_v4.dna.toplevel.fa'
 peak_overlap_genome_bins(genome=genome_path, bin_size=250, frac=0.7)
 
 overlap_matrix = pd.read_csv(filepath_or_buffer='data/overlap.bed', sep='\t', header=None,
